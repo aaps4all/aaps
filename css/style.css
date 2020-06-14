@@ -5776,9 +5776,11 @@ text-align:center;
 line-height:450px;
 /*background-color:#fff;
 height:450px;*/
-	
 background:url(../images/bannerhead.png) left top no-repeat;
 height:100%;
+    background-size: 100% 100%;
+
+
 
 }
 
