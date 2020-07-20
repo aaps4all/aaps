@@ -1,10 +1,19 @@
-
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>Order Online</title>
-<!-- Stylesheets -->
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/vendor/nivo-slider/css/nivo-slider.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style_order_online.css" rel="stylesheet">
 
 <script language="javascript" type="text/javascript">
 function disdate()
@@ -43,7 +52,7 @@ if (ordertime < "07"){
     //document.getElementById("r2").checked = true;
     //document.getElementById("r3").checked = true;
 } else if (hours >= "10" && hours < "16") {
-//	alert('3');
+//  alert('3');
     document.getElementById("r1").disabled = true;
     document.getElementById("r2").disabled = true;
     //document.getElementById("r3").checked = true;
@@ -64,7 +73,7 @@ else if (dateenter != today){
 </script>
 
 <script type="text/javascript">
-	function checkForm(form) // Submit button clicked
+  function checkForm(form) // Submit button clicked
   {
     //
     // check form input values
@@ -83,328 +92,198 @@ else if (dateenter != today){
 </script>
 
 
-
-
-
-<link href="css/bootstrap.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
-<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-<link rel="icon" href="images/favicon.png" type="image/x-icon">
-
-
-
-
-<!-- Responsive -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-<link href="css/responsive.css" rel="stylesheet">
-<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Order Online</title>
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Font-->
+	<link rel="stylesheet" type="text/css" href="css/opensans-font.css">
+	<link rel="stylesheet" type="text/css" href="fonts/line-awesome/css/line-awesome.min.css">
+	<!-- Jquery -->
+	<link rel="stylesheet" href="https://jqueryvalidation.org/files/demo/site-demos.css">
+	<!-- Main Style Css -->
+        <link href="assets/css/style_order_online.css" rel="stylesheet">
+       <link href="assets/css/style.css" rel="stylesheet">
+         
 </head>
+<body class="form-v4" data-spy="scroll" data-target="#navbar-example">
 
-<!-- Changes in body tag done here -->
-<body>
-<div class="page-wrapper">
-    <!-- Preloader -->
-    <div class="preloader"></div>
-    <!-- Main Header-->
-    <header class="main-header">
-        
-                    <!-- Main Box -->
-                    <div class="main-box">
-                       <div class="auto-container">
-                           <div class="outer-container clearfix">
-                            <!--Logo Box-->
-                            <div class="logo-box">
-                                <div class="logo"><a href="index.html"><img src="images/logo1.png" alt=""></a></div>
-                            </div>
-                            
-                            <!--Nav Outer-->
-                            <div class="nav-outer clearfix">
-                                <!-- Main Menu -->
-                                <nav class="main-menu">
-                                    <div class="navbar-header">
-                                        <!-- Toggle Button -->    	
-                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                        </button>
-                                    </div>
-                                    
-                                    <div class="navbar-collapse collapse clearfix">
-                                        <ul class="navigation clearfix">
-                                            <li class="current"><a href="index.html">Home</a>
-                                                
-                                            </li>
-                                            <li><a href="about.html">About Us</a>
-                                                
-                                            </li>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex">
 
-                                                     <li><a href="serviceone.html">Order Online</a></li>
-                                                    
-                                            
-                                            
-                                            <li><a href="contact.html">Contact Us</a></li>
-                                             <li><a href="#" style="font-size: 23px; color: #ff7e00; line-height: 40px;"><i class="fa fa-mobile" aria-hidden="true"></i> +91-8789522717</a></li>
-                                        </ul>
-                                    </div>
-                                </nav>
-                                <!-- Main Menu End-->
-                                
-                                <!--Right Info-->
-                                <div class="info-options">
-                                    <!--Info Block-->
-                                    <div class="info-block clearfix">
-                                        <!--Search Box-->
-        
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            <!--Nav Outer End-->
-                            
-                        </div>    
-                    </div>
-                </div>
-        
-            </header>
-    <!--End Main Header -->
-    
-    <!--Page Title-->
-    <section class="page-title">
-    	<div class="auto-container">
-        	<div class="row clearfix">
-            	<!--Title -->
-            	<div class="title-column col-md-6 col-sm-8 col-xs-12">
-                	<h1>Order Online</h1>
-                </div>
+      <div class="logo mr-auto">
+        <h1 class="text-light"><a href="index.html"><span>AAPS</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">About</a></li>
+          <li><a href="index.html">Team</a></li>
+          <li><a href="index.html">Contact</a></li>
+          
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
 
 
-                <!--Bread Crumb -->
-   
+	<div class="page-content">
+		<div class="form-v4-content">
+			<div class="form-left">
+				<h2 style="color:white">INFORMATION</h2>
+				<p class="text-1" style="color:white">For knowing the status of your order kindly call at: </p>
+				<p class="text-2" style="color:white"><span>Order confirmation:</span> Once your order is placed, you will receive a call from our team for confirmation.</p>
+				
+			</div>
 
-                <div class="breadcrumb-column col-md-6 col-sm-4 col-xs-12">
-                    <ul class="bread-crumb clearfix">
-                        <li><a href="index.html">Home</a></li>
-                        <li class="active">Order Online</li>
-                    </ul>
-                </div>
-            </div>
-  
-
-   <!--     </br></br></br>
-       <p> <h4> If you like to change or <strong>cancel</strong> the order kindly call the below mentioned number and provide the mobile number by which the order was placed. </p>
-            <p><h4>यदि आप ऑर्डर बदलना या रद्द करना चाहते हैं, तो कृपया नीचे उल्लेखित नंबर पर कॉल करें और वह मोबाइल नंबर प्रदान करें जिसके द्वारा ऑर्डर दिया गया था।</h4></p>
-            <h1> <a href="tel:5551234567"> <button type="button" class="btn btn-primary btn-lg" align="center  "> +918789522717 </button> </a>
-   -->
-</div>
-    </section>
-    <!--End Page Title-->
-    
-    <!--Business Section-->
-    <section class="business-section">
-    	<div class="auto-container">
-        	<div class="row clearfix">
-                
-                <!--Content Column-->
-                <div class="content-column col-md-6 col-md-offset-1 col-sm-12 col-xs-12">
-                	<div class="contact-form">
-<script type="text/javascript">var submitted=false;</script>
+			<script type="text/javascript">var submitted=false;</script>
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"     
 onload="if(submitted) {window.location='submit_confirmation.html';}"></iframe>
-      <form action="https://docs.google.com/forms/u/5/d/e/1FAIpQLSfW-fAfd9Vd1OW-8SVVaN26H8rIeXxZD_-qKXgpDSHpqWUyGA/formResponse" id="orderform" method="post" target="hidden_iframe" onsubmit="submitted=true; return checkForm(this);" >
+      <form class="form-detail" action="https://docs.google.com/forms/u/5/d/e/1FAIpQLSfW-fAfd9Vd1OW-8SVVaN26H8rIeXxZD_-qKXgpDSHpqWUyGA/formResponse" id="orderform" method="post" target="hidden_iframe" onsubmit="submitted=true; return checkForm(this);" >
 
-                            <div class="row clearfix">  
-                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                 <label for="" style="color:#000 !important;">Your Name / नाम</label>
-                                    <input type="text" name="entry.1350079989" value="" placeholder="Your Name" required>
-                                </div>
-                                
-
-
-                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                <label for="" style="color:#000 !important;">Mobile No. / फ़ोन </label>
-                                    <input type="text" name="entry.785163088" placeholder="Mobile No." pattern="[1-9]{1}[0-9]{9}" required>
-                                </div>
-                               
-
-                          <!--      <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                <label for="" style="color:#000 !important;">Email Address : Optional ( Fill up your email address if you would like to receive your order details )</label>
-                                    <input type="email" name="entry.785163088" placeholder="Email Address">
-                                </div>
+				<h2>ORDER ONLINE</h2>
+				<div class="form-group">
+					<div class="form-row form-row-1">
+						<label for="first_name">Name</label>
+						<input type="text" name="entry.1350079989" value="" placeholder="Your Name" class="input-text" required>
+					</div>
+				</div>
 
 
--->
+				 <div class="form-row">
+                                <label for="mobile_no">Mobile No.</label>
+						    <input type="text" name="entry.785163088" placeholder="Mobile No." class="input-text" pattern="[1-9]{1}[0-9]{9}" required >
+                                </div>				
 
-                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                <label for="" style="color:#000 !important;">Your Address/ पता </label>
-                                    <input type="text" name="entry.407707154" value="" placeholder="Your Address (With House number)" required>
+
+
+
+                                <div class="form-row">
+                                <label for="address">Your Address</label>
+                                    <input type="text" name="entry.407707154" value="" placeholder="Your Address (With House number)" class="input-text"required>
                                 </div>
 
 
 
-                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                <label for="" style="color:#000 !important;">Pin code/ पिन कोड </label>
-                                    <input type="text" name="entry.1884208436" value="" placeholder="Your Pin Code" required>
+                                <div class="form-row">
+                                <label for="pin_code">Pin code </label>
+                                    <input type="text" name="entry.1884208436" value="" placeholder="Your Pin Code" class="input-text" required>
                                 </div>
 
 
-                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                               <label for="" style="color:#000 !important;">Delivery date / डिलीवरी की तारीख
- </label><br>
+                                <div class="form-row">
+                               <label for="delivery_date">Delivery date </label><br>
                                 <input type="date" id="startdate" name="entry.1885940400" id="mydate"
-                                  min="2020-03-01" max="2020-12-31" required>
+                                  min="2020-03-01" max="2020-12-31" class="input-text" required>
                                 </div>
 
-                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                <label class ="label_radio" for="radio-01" style="color:#000 !important;">Select the delivery time / वितरण समय का चयन करें </label><br>
-                                    <input name="entry.1359905200" id="r1" type="radio"  value = "9 AM - 10 AM" required /> 9 AM - 10 AM  <br>
+                                <div class="form-group">
+					<div class="form-row form-row-1">
+                                <label for="radio-01">Delivery time</label>
+</div>
 
+					<div class="form-row form-row-1 ">
+                                    <input name="entry.1359905200" id="r1" type="radio"  value = "9 AM - 10 AM" required/> 9 - 10 AM 
+</div>
 
-                                    <input name="entry.1359905200" id= "r2" type="radio"  value = "1 PM - 2 PM" required /> 12 PM - 1 PM <br>
+					<div class="form-row form-row-1 ">
 
-                                    <input name="entry.1359905200" id = "r3" type="radio"  value = "6 PM - 7 PM" required/> 6 PM - 7 PM  <br>
-
-
+                                    <input name="entry.1359905200" id= "r2" type="radio"  value = "1 PM - 2 PM" required /> 12 - 1 PM 
+</div>
+					<div class="form-row form-row-1 ">
+                                    <input name="entry.1359905200" id = "r3" type="radio"  value = "6 PM - 7 PM" required/> 6 - 7 PM </br>
+</div>
 <input type="hidden" name="entry.1359905200"/>
  </div>
                                
 <script type="text/javascript">
     myVar = setInterval(disdate, 30);
 </script> 
-
+</br>
                                  
-                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
- <label for="" style="color:#000 !important;">Order Details/ ऑर्डर का विवरण </label>
+                                <div class="form-row-1">
+ <label for="order_details" >Order Details</label>
                              
-                                    <textarea name="entry.1310886848" placeholder="Order Details(If multiple orders to be placed enter the details leaving one line after each order)" required></textarea>
+                                    <textarea cols="40" rows="10" name="entry.1310886848" placeholder="Order Details(If multiple orders to be placed enter the details leaving one line after each order)" class="input-text"  required></textarea>
                                 </div>
 
                       
-                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                <div class="form-row">
                            <input type="submit" name="myButton" class="theme-btn btn-style-one" onclick="disdate(); return confirm('Kindly press Ok to submit order and please wait for the confirmation page.')" value="Place Order"></button>
-        </div>
-    </div></form></div></div></div></div></section>
-    <!--End Business Section-->
+                       </div>
+
+      </form></div></div>
     
-    <!--Main Footer-->
-    <footer class="main-footer">
-    	<!--footer upper-->
-    	<div class="footer-upper">
-           <div class="auto-container">
-            <div class="row clearfix">
-                <!--Big Column-->
-                <div class="big-column col-md-6 col-sm-12 col-xs-12">
-                    <div class="row clearfix">
-
-                        <!--Footer Column-->
-                        <div class="footer-column col-md-6 col-sm-6 col-xs-12">
-                            <div class="footer-widget about-widget">
-                               <!--  <h3><span class="theme_color">Become our </span>First Client <br></h3> -->
-                                 <h2>Social Link</h2>
-                                <ul class="social-icon-one">
-                                    <li><a href="#"><span class="fa fa-facebook"></span> Facebook</a></li>
-                                    <li><a href="#"><span class="fa fa-twitter"></span> Twitter</a></li>
-                                    <li><a href="#"><span class="fa fa-google-plus"></span>Google+</a></li>
-                                    <li><a href="#"><span class="fa fa-dribbble"></span>Dribble</a></li>
-                                    <li><a href="#"><span class="fa fa-git"></span>GitHub</a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!--Footer Column-->
-                       
-
-
- <div class="footer-column col-md-6 col-sm-6 col-xs-12">
-                            <div class="footer-widget links-widget">
-                                <h2>Our offerings</h2>
-                                <div class="widget-content">
-                                    <ul class="list">
-                                        <li><a href="#">E-commerce</a></li>
-                                        <li><a href="#">Parcel delivery</a></li>
-                                        <li><a href="#">No hidden charges</a></li>
-                                        <li><a href="#">User friendly</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-
-
-                <!--Big Column-->
-               <div class="big-column col-md-6 col-sm-12 col-xs-12">
-                    <div class="row clearfix">
-
-                        <div class="footer-column col-md-6 col-sm-6 col-xs-12">
-                            <div class="footer-widget address-widget">
-                                <h2>Our Address</h2>
-                                <div class="widget-content">
-                                    <ul class="list-style-two">
-                                        <li><span class="icon fa fa-map-marker"></span>Hata, Jamhsedpur</li>
-                                        <li><span class="icon fa fa-phone"></span>(+91) 8789522717</li>
-                                        <li><span class="icon">@</span>aapsandcompany@gmail.com</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--End Footer Upper-->
-
-    <!--footer bottom-->
-    <div class="footer-bottom">
-       <div class="auto-container">
-           <div class="copyright">&copy; 2020 <a href="index.html"></a> All Rights Reserved. </div>
-       </div>
-   </div>
-   <!--End Footer Bottom-->
-
-</footer>
-
- </div>
-
-<!--Scroll to top-->
-<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-long-arrow-up"></span></div>
-
-<script src="js/jquery.js"></script> 
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.fancybox.pack.js"></script>
-<script src="js/jquery.fancybox-media.js"></script>
-<script src="js/owl.js"></script>
-<script src="js/appear.js"></script>
-<script src="js/wow.js"></script>
-<script src="js/script.js"></script>
 
 
 
 
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+	<script>
+		// just for the demos, avoids form submit
+		jQuery.validator.setDefaults({
+		  	debug: true,
+		  	success:  function(label){
+        		label.attr('id', 'valid');
+   		 	},
+		});
+		$( "#myform" ).validate({
+		  	rules: {
+			    password: "required",
+		    	comfirm_password: {
+		      		equalTo: "#password"
+		    	}
+		  	},
+		  	messages: {
+		  		first_name: {
+		  			required: "Please enter a firstname"
+		  		},
+		  		last_name: {
+		  			required: "Please enter a lastname"
+		  		},
+		  		your_email: {
+		  			required: "Please provide an email"
+		  		},
+		  		password: {
+	  				required: "Please enter a password"
+		  		},
+		  		comfirm_password: {
+		  			required: "Please enter a password",
+		      		equalTo: "Wrong Password"
+		    	}
+		  	}
+		});
+	</script>
 
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/momentjs/2.14.1/moment.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+ <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
 
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/appear/jquery.appear.js"></script>
+  <script src="assets/vendor/knob/jquery.knob.js"></script>
+  <script src="assets/vendor/parallax/parallax.js"></script>
+  <script src="assets/vendor/wow/wow.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/nivo-slider/js/jquery.nivo.slider.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
 
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
-
-
-
-
-
-
-
-</body>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 </html>
